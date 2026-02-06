@@ -1,0 +1,99 @@
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    margin: 0;
+}
+
+/* Header styles */
+header {
+    background-color: #CC0000;
+    background-size: cover;
+    padding: 20px;
+    color: #f9f9f9;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Footer styles */
+footer {
+    background-color: lightgray;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Product styles */
+
+.super-product {
+    /* This is a new style to make the boxes stack horizontally */
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 117px; 
+    gap: 20px;
+    justify-content: center;
+    text-align: center;
+}
+
+.product {
+    width: 300px;
+    padding: 20px;
+    border: 3px solid #000;
+    border-color: #CC0000;
+    border-radius: 5%;
+    margin: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+.product-image {
+    position: relative;
+}
+
+.product-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #CC0000;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* Table styles */
+.product-specs {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.product-specs th {
+    background-color: #CC0000;
+    border: 1px solid #ddd;
+    padding: 8px;
+    color: white;
+}
+
+.product-specs td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.product-specs tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.product-specs tr:hover {
+    background-color: red;
+    color: white;
+}
