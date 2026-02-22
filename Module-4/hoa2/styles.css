@@ -1,0 +1,146 @@
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    opacity: 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header h2 {
+    font-size: 3ren;
+    margin: 5px 0;
+    color: #475569;
+}
+
+header.visible {
+    opacity: 1;
+}
+
+.header-titlecard  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.1);
+    padding: 1%;
+    gap: 3%;
+    border-radius: 15em;
+    width: 50%;
+}
+
+.header-titlecard h1 {
+    font-size: 5rem;
+}
+
+.header-titlecard img {
+    width: 5em;
+    animation: rotate 10s infinite linear;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+    gap: 5%;
+}
+
+.pokemon-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 50%;
+    aspect-ratio: 1 / 1.5;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.1);
+    border: 5px #333 solid;
+    border-radius: 2lh;
+    padding: 1%;
+    transition: transform 0.3s ease-out, background-color 0.3s ease;
+    transform: scale(1);
+}
+
+.hidden-text {
+    text-align: center;
+    opacity: 0;
+    font-size: 1rem;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.pokemon-card:hover {
+    background-color: #d0e6ff;
+    border-color: #2185ff;
+    transform: scale(1.5);
+}
+
+.pokemon-card:hover .hidden-text{
+    opacity: 1;
+    color: #336699;
+}
+
+.pokemon-card:hover .hidden-text h3{
+    opacity: 1;
+    color: #003366;
+}
+
+.pokemon-card img {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    width: 80%;
+}
+
+.pokemon-card:hover img {
+    animation: idle 1s infinite linear;;
+}
+
+@keyframes idle {
+	0% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(1.1);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+@media (max-width: 900px) {
+    .cards {
+        grid-template-columns: 1fr;
+        flex-direction: column;
+    }
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+}
