@@ -1,0 +1,141 @@
+$color_1: white;
+$color_2: #0F172A;
+$color_3: #475569;
+$color_4: #333333;
+$background-color_1: #f4f4f4;
+$background-color_2: #4a4a4a;
+$background-color_3: white;
+$background-color_4: #333;
+$font-family_1: Arial, sans-serif;
+
+body {
+	font-family: $font-family_1;
+	margin: 0;
+	padding: 0;
+	background-color: $background-color_1;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: $background-color_2;
+	color: $color_1;
+	padding: 10px 20px;
+}
+
+h2 {
+	font-size: 2.5rem;
+	margin: 10px 0;
+	line-height: 1.1;
+	color: $color_2;
+}
+
+h3 {
+	font-weight: 300;
+	margin: 5px 0;
+	color: $color_3;
+}
+
+.subheader {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: $background-color_2;
+	color: $color_1;
+	padding: 10px 10px;
+}
+
+.profile {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
+	justify-content: space-around;
+	gap: 20px;
+	padding: 20px;
+}
+
+.profile-overview {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	justify-content: space-between;
+	align-items: center;
+	gap: 25px;
+	padding: 20px;
+	background-color: $background-color_3;
+	padding: 20px;
+	border: 1px solid #ddd;
+	box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+	
+  img {
+		width: 80%;
+		border: 5px solid #f4f4f4;
+		border-radius: 20%;
+		box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+		aspect-ratio: 1/1;
+		-o-object-fit: cover;
+		object-fit: cover;
+	}
+}
+
+.profile-skills {
+	gap: 20px;
+	padding: 20px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	color: $color_4;
+}
+
+.projects {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 50px;
+	padding: 50px;
+}
+
+.project-card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: $background-color_3;
+	gap: 10px;
+	padding: 20px;
+	border: 1px solid #ddd;
+	box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s ease;
+	
+  &:hover {
+		transform: translateY(-10px);
+	}
+	
+  img {
+		width: 80%;
+		border: 5px solid #f4f4f4;
+		border-radius: 20%;
+		box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+		aspect-ratio: 1/1;
+		-o-object-fit: cover;
+		object-fit: cover;
+	}
+	
+  h3 {
+		color: $color_2;
+		text-align: center;
+	}
+}
+
+footer {
+	background-color: $background-color_4;
+	color: $color_1;
+	text-align: center;
+	padding: 10px 20px;
+}
+
+@media (max-width: 900px) {
+	.projects {
+		grid-template-columns: 1fr;
+	}
+	.profile {
+		grid-template-columns: 1fr;
+	}
+}
