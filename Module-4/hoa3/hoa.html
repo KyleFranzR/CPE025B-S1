@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body class="bg-light text-dark">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">My Portfolio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#info">My Info</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#skills">My Skills</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects">My Projects</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="py-5 px-3" id="info">
+    <div class="container py-5">
+        <div class="row align-items-center">
+            <div class="col-md-7 pe-lg-5">
+                <p class="text-uppercase small fw-bold text-secondary mb-2">Hello There</p>
+                <h1 class="display-4 fw-normal mb-4">My name is Kyle Franz Rodriguez</h1>
+                <div class="text-dark mb-5">
+                    <p class="lead">I am an undergraduate in TIP, currently earning my bachelor's degree in computer engineering</p>
+                </div>
+                <div class="d-flex align-items-center gap-4">
+                    <a href="#" class="btn btn-dark px-4 py-2 custom-btn">Email Me</a>
+                </div>
+            </div>
+            <div class="col-md-5 mt-5 mt-md-0 text-center">
+                <img src="assets\img\formal-pic.jpg" alt="My picture" class="img-fluid rounded-4 shadow-lg" style="max-height: 450px; object-fit: cover;">
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <section id="skills">
+        <div class="container py-5 text-center">
+            <h2 class="display-2 fw-normal mb-4">My Skills</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-9">
+                    <p class="lead text-dark fw-medium">These are some of the skills I earned during my lifetime</p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion px-5" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#accordionCollapseOne" aria-expanded="false" aria-controls="accordionCollapseOne">
+                        HARD SKILLS
+                    </button>
+                </h2>
+                <div id="accordionCollapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>HTML</li>
+                            <li>C++</li>
+                            <li>Python</li>
+                            <li>Data Handling</li>
+                            <li>Data Structures</li>
+                            <li>Object-Oriented Programming</li>
+                            <li>Machine Learning</li>
+                            <li>Neural Network</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#accordionCollapseTwo" aria-expanded="false" aria-controls="accordionCollapseTwo">
+                        SOFT SKILLS
+                    </button>
+                </h2>
+                <div id="accordionCollapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>Critical Thinking</li>
+                            <li>Creative</li>
+                            <li>Adaptable</li>
+                            <li>Communication</li>
+                            <li>Python</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-5 px-3">
+        <div class="container py-5 text-center">
+            <h2 class="display-3 fw-normal mb-4">My Projects</h2>
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8">
+                    <p class="lead text-dark fw-normal">
+                        These are some of my notable works throughout my journey
+                    </p>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-4 text-start">
+                    <div class="card bg-transparent border-0 h-100 rounded shadow py-3 px-3">
+                        <img src="https://images.pexels.com/photos/14374176/pexels-photo-14374176.jpeg" class="card-img-top rounded-4 mb-3" alt="household-img" style="aspect-ratio: 1/1; object-fit: cover;">
+                        <div class="card-body p-0">
+                            <h5 class="card-title fw-bold mb-1">Carbon Footprint Calculator</h5>
+                            <div class="d-flex gap-2">
+                                <span class="badge rounded-pill bg-secondary text-white px-3 py-2">Python</span>
+                                <span class="badge rounded-pill bg-secondary text-white px-3 py-2">Object-Oriented Programming</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 text-start">
+                    <div class="card bg-transparent border-0 h-100 rounded shadow py-3 px-3">
+                        <img src="https://images.pexels.com/photos/5769383/pexels-photo-5769383.jpeg" class="card-img-top rounded-4 mb-3" alt="chicken-img" style="aspect-ratio: 1/1; object-fit: cover;">
+                        <div class="card-body p-0">
+                            <h5 class="card-title fw-bold mb-1">Poultry Meat Defect Detection</h5>
+                            <div class="d-flex gap-2">
+                                <span class="badge rounded-pill bg-secondary text-white px-3 py-2">Computer Vision</span>
+                                <span class="badge rounded-pill bg-secondary text-white px-3 py-2">Object Detection</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 text-start">
+                    <div class="card bg-transparent border-0 h-100 rounded shadow py-3 px-3">
+                        <img src="https://images.pexels.com/photos/20109380/pexels-photo-20109380.jpeg" class="card-img-top rounded-4 mb-3" alt="pet-eating-img" style="aspect-ratio: 1/1; object-fit: cover;">
+                        <div class="card-body p-0">
+                            <h5 class="card-title fw-bold mb-1">Automatic Pet Food Dispenser</h5>
+                            <div class="d-flex gap-2">
+                                <span class="badge rounded-pill bg-secondary text-white px-3 py-2">Machine Learning</span>
+                                <span class="badge rounded-pill bg-secondary text-white px-3 py-2">Embedded System</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white">
+        <p>© 2026 My Portfolio</p>
+    </footer>
+</body>
+</html>
