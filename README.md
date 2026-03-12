@@ -1,2 +1,2 @@
 # CPE025B-S1
-3rd Year Second Sem Software Design Course
+3rd Year Second Sem Software Design Course. For archiving purposes
